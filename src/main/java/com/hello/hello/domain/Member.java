@@ -3,6 +3,7 @@ package com.hello.hello.domain;
 public class Member {
 
     private Long id;
+
     private String name;
 
     public Long getId() {

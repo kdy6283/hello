@@ -12,7 +12,7 @@ public class MemberService {
     private final MemberRepository memberRepository = new MemoryMemberRepository();
 
     /**
-    * 회원가입
+    * 회원 가입
     * */
     public Long join(Member member){
         //같은 이름 중복회원X
