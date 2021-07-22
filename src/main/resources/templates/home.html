@@ -13,26 +13,26 @@
 </div>
 
 <div class="bannerbox">
-  <a href="index.html">
+  <a href="/members">
     <b style="font-size: 20px">배너 사진</b>
   </a>
 </div>
 <br>
 
 <div style="margin-left: 2.5%">
-  <a href="../templates/profile.html">
+  <a href="/members">
     <b>Profile</b>
   </a>
 
   <b style="margin-left: 10px">|</b>
 
-  <a href="index.html" style="margin-left: 10px">
+  <a href="/members" style="margin-left: 10px">
     <b>Screenshot</b>
   </a>
 
   <b style="margin-left: 5px">|</b>
 
-  <a href="index.html" style="margin-left: 10px">
+  <a href="/members" style="margin-left: 10px">
     <b>Coding</b>
   </a>
 
@@ -50,18 +50,44 @@
     <p style="font-size: 10px">(kdy6283)</p>
   </div>
   <div class="container">
-
-    <p>회원 기능</p>
-
+    <br><br>
     <p>
-
-      <a href="/members/new">회원 가입</a>
-
-      <a href="/members">회원 목록</a>
-
+      <a href="/members/new">게시글 작성</a>
     </p>
   </div>
+  <div class="container">
 
+    <div>
+
+      <table>
+
+        <thead>
+        <tr>
+
+          <th>#</th>
+
+          <th>게시글 목록</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        <tr th:each="member : ${members}">
+
+          <td th:text="${member.id}"></td>
+
+          <td th:text="${member.name}"></td>
+
+        </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+  </div> <!-- /container -->
 
 
 </div>

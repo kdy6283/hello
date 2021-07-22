@@ -3,10 +3,13 @@ package com.hello.hello.service;
 import com.hello.hello.domain.Member;
 import com.hello.hello.repository.MemberRepository;
 import com.hello.hello.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -39,4 +42,6 @@ public class MemberService {
     public  Optional<Member> findOne(Long memberId){
         return memberRepository.findById(memberId);
     }
+
+
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+<div align="center">
+    <h2>게시글 작성 페이지</h2>
+</div>
+<div class="container" style="margin-left: 2.5%">
+<br><br>
+    <form action="/members/new" method="post">
+
+        <div class="form-group">
+
+            <label for="name">게시글 작성</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="제목을 입력하세요.">
+            <button type="submit">등록</button>
+        </div>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>

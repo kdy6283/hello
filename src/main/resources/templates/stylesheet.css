@@ -1,7 +1,11 @@
 
 a{
     text-decoration: none;
-    color: red;
+    color: black;
+}
+.test{
+    text-decoration: none;
+    color: black;
 }
 .profilebox{
     background-color: #B2CCFF;
@@ -29,5 +33,5 @@ a{
 }
 .linkstyle{
     text-decoration: none;
-    color: red;
+    color: black;
 }
